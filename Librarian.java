@@ -1,0 +1,1 @@
+// Class inheriting from Member with Additional methods to manage the library
