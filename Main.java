@@ -29,16 +29,17 @@ Test the System:
  */
 import java.util.Scanner;
 
-
 public class Main {
 
 	// Main method
 	public static void main(String[] args) {
 		Book book = new Book("The Fourth Wing" , "Rebecca Yaros");
+		Book book1 = new Book("The Iron Flame", "Rebecca Yaros");
+		Book book2 = new Book("The Onyx Storm", "Rebecca Yaros");
 		Scanner scanner = new Scanner(System.in);
 
 		while (true) {
-			System.out.println("Library Manager System");
+			System.out.println("Library Management System");
 			// System.out.println("1. Add a book");
 			// System.out.println("2. Register Member");
 			// System.out.println("3. Borrow a Book");
@@ -62,8 +63,10 @@ public class Main {
 				// String isbn = scanner.nextLine();
 
 			case 1: 
-				System.out.println("\nThe available books are: ");
+				System.out.println("\nThe current available books are: ");
 				System.out.print(book.toString());
+				System.out.print(book1.toString());
+				System.out.print(book2.toString());
 			case 6: 
 				System.out.println("\nExiting... Hope to see you again soon!");
 				scanner.close();

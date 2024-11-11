@@ -13,6 +13,6 @@ public class Book {
     }
 
     public String toString(){
-        return bookName + " by " + authorName;
+        return bookName + " by " + authorName + "\n";
     }
 }
